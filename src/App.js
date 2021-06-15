@@ -23,6 +23,9 @@ const mapStateToProps = state => {
 	};
 };
 
+
+//dispatches increase count 
+//which will reset state by calling reducer(state, action)
 const mapDispatchToProps = dispatch => {
 	return {
 		increaseCount: () => dispatch({ type: 'INCREASE_COUNT' })
